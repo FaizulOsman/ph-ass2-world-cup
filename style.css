@@ -261,6 +261,27 @@ footer {
 
 
 
+
+/* ======================================
+============= Upcoming Match page ===============
+====================================== */
+.flag img {
+    max-width: 94px;
+    width: 100%;
+}
+
+.flag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flag h2 {
+    margin: auto 20px;
+}
+
+
+
 /* ======================================
 ============= Responsive Media ===============
 ====================================== */
@@ -278,6 +299,11 @@ footer {
 
     .footer-area .border {
         width: 80%;
+    }
+
+    .flag img {
+        max-width: 94px;
+        width: 40%;
     }
 }
 
@@ -300,6 +326,11 @@ footer {
     .blogs {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-img img {
+        max-width: 352px;
+        width: 100%;
     }
 
     .blog:nth-child(9) {
@@ -356,6 +387,10 @@ footer {
         max-width: 323px;
         height: 340px;
         margin: 58px auto 0 2px;
+    }
+
+    .flag img {
+        width: 30%;
     }
 }
 
@@ -504,17 +539,10 @@ footer {
 
 
 /* ============== max-width 680px =============== */
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 700px) {
     .header-info h1 {
         font-size: 30px;
         line-height: 40px;
-    }
-
-    .services .first-four,
-    .services .last-two {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
     }
 
     .blog-img img {
@@ -524,6 +552,13 @@ footer {
     .view-all-btn a {
         font-size: 15px;
         padding: 8px 15px;
+    }
+
+    .services .first-four,
+    .services .last-two {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
     }
 }
 
@@ -540,6 +575,10 @@ footer {
 
     .banner-img img {
         width: 280px;
+    }
+
+    .flag img {
+        width: 30%;
     }
 }
 
@@ -593,6 +632,16 @@ footer {
         min-width: 150px;
         min-height: 140px;
     }
+
+    .group-btn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .group-btn a {
+        width: 60%;
+        margin-top: 16px;
+    }
 }
 
 
@@ -641,16 +690,6 @@ footer {
         margin-top: 8px;
     }
 
-    .group-btn {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .group-btn a {
-        width: 60%;
-        margin-top: 16px;
-    }
-
     .blog-area {
         margin-top: 24px;
     }
@@ -696,6 +735,10 @@ footer {
 
     .social {
         margin-top: 24px;
+    }
+
+    header:hover .banner-img img {
+        padding: 25px 0 0;
     }
 }
 
