@@ -1,4 +1,4 @@
-/* ======== Link Font Awesome ======== */
+/* ======== Link Google Fonts ======== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
 /* ======== Common CSS ======== */
@@ -43,6 +43,7 @@ body {
 .header-info h1 {
     font-size: 70px;
     font-weight: 700;
+    line-height: 80px;
 }
 
 .header-info p {
@@ -256,6 +257,10 @@ footer {
         margin: 10px auto 32px;
     }
 
+    .header-info p span {
+        display: none;
+    }
+
     .header-info a {
         padding: 12px;
     }
@@ -267,7 +272,6 @@ footer {
     }
 
     /* Main max-width 834px */
-    /* Group Button max-width 834px */
     .blog-section {
         display: block;
         margin-top: 70px;
@@ -372,6 +376,8 @@ footer {
 ============= Responsive Media ===============
 ====================================== */
 @media screen and (max-width: 375px) {
+
+    /* Header max-width 375px */
     .container {
         max-width: 334px;
     }
@@ -412,7 +418,7 @@ footer {
     }
 
 
-    /* Blog max-width 375px */
+    /* Main max-width 375px */
     .blog-section {
         margin-top: 8px;
     }
@@ -474,4 +480,26 @@ footer {
     .social {
         margin-top: 24px;
     }
+}
+
+
+/* ====== Animation ===== */
+
+.header-info a {
+    transition: padding 2s;
+}
+
+header:hover .header-info a {
+    padding: 16px 40px;
+}
+
+
+
+.banner-img img {
+    transition: margin-left 2s;
+    margin-left: 50px;
+}
+
+header:hover .banner-img img {
+    margin-left: 150px;
 }
