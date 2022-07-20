@@ -74,12 +74,36 @@ body {
 
 /* ====== Animation ===== */
 
+.header-info h1 {
+    transition: letter-spacing 1s;
+}
+
+header:hover .header-info h1 {
+    letter-spacing: 7px;
+}
+
+.header-info p {
+    transition: letter-spacing 1s;
+}
+
+header:hover .header-info p {
+    letter-spacing: 0.5px;
+}
+
 .header-info a {
     transition: padding 1s;
 }
 
 header:hover .header-info a {
     padding: 16px 40px;
+}
+
+.banner-img img {
+    transition: padding 1s;
+}
+
+header:hover .banner-img img {
+    padding: 0px 50px 50px;
 }
 
 
@@ -344,8 +368,19 @@ footer {
         font-size: 16px;
         margin-top: 15px;
     }
-}
 
+    header:hover .header-info h1 {
+        letter-spacing: 1px;
+    }
+
+    header:hover .header-info p {
+        letter-spacing: 0.1px;
+    }
+
+    header:hover .banner-img img {
+        padding: 0px 30px 30px;
+    }
+}
 
 
 /* ============== max-width 834px =============== */
@@ -452,6 +487,18 @@ footer {
 
     .footer-area .border {
         width: 80%;
+    }
+
+    header:hover .header-info h1 {
+        letter-spacing: 2px;
+    }
+
+    header:hover .header-info p {
+        letter-spacing: 0.3px;
+    }
+
+    header:hover .banner-img img {
+        padding: 0;
     }
 }
 
