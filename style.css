@@ -1,0 +1,73 @@
+/* ======== Link Font Awesome ======== */
+
+
+/* ======== Common CSS ======== */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1320px;
+    /* width: 100%; */
+    margin: 0 auto;
+}
+
+:root {
+    --background-black: #161616;
+    --background-red: #DD0000;
+    --text-black: #161616;
+}
+
+/* ======================================
+============= Header Area ===============
+====================================== */
+.header-area {
+    background-color: var(--background-black);
+    color: white;
+    border-radius: 30px;
+    margin-top: 50px;
+    display: flex;
+}
+
+.header-info {
+    max-width: 530px;
+    margin: 111px 0 111px 106px;
+}
+
+.header-info h1 {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.header-info p {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 20px auto 46px;
+}
+
+.header-info a {
+    text-decoration: none;
+    padding: 16px 25px;
+    color: white;
+    background-color: var(--background-red);
+    border-radius: 5px;
+}
+
+.banner-img img {
+    max-width: 581px;
+    height: 610px;
+    margin: 33px auto 0 24px;
+    margin-bottom: 0;
+}
+
+
+/* ======================================
+============= Main Area ===============
+====================================== */
+
+
+
+/* ======================================
+============= Footer Area ===============
+====================================== */
