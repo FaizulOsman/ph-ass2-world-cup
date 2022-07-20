@@ -32,6 +32,7 @@ body {
     border-radius: 30px;
     margin-top: 50px;
     display: flex;
+    justify-content: space-between;
     height: 646px;
 }
 
@@ -71,7 +72,15 @@ body {
     margin-bottom: 0;
 }
 
+/* ====== Animation ===== */
 
+.header-info a {
+    transition: padding 1s;
+}
+
+header:hover .header-info a {
+    padding: 16px 40px;
+}
 
 
 /* ======================================
@@ -81,7 +90,8 @@ body {
 /* ======== Blog Section ======== */
 
 .blog-section {
-    display: flex;
+    display: grid;
+    grid-template-columns: 312px 1fr;
     margin-top: 130px;
 }
 
@@ -89,7 +99,7 @@ body {
     padding: 30px 30px 0 30px;
     background-color: var(--background-black);
     border-radius: 10px;
-    height: 100%;
+    height: 300px;
 }
 
 .group-btn {
@@ -115,7 +125,6 @@ body {
 
 .blog-area {
     max-width: 984px;
-    width: 100%;
     margin-left: 24px;
 }
 
@@ -231,13 +240,67 @@ footer {
 /* ======================================
 ============= Responsive Media ===============
 ====================================== */
-@media screen and (max-width: 834px) {
 
-    /* Header max-width 834px */
+
+/* ============== max-width 1350px =============== */
+@media screen and (max-width: 1350px) {
     .container {
-        max-width: 734px;
+        width: 95%;
     }
 
+    .blog-img img {
+        max-width: 100%;
+    }
+
+    .footer-area .border {
+        width: 80%;
+    }
+}
+
+/* ============== max-width 1200px =============== */
+@media screen and (max-width: 1200px) {
+    .header-info h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .header-info p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+}
+
+/* ============== max-width 1120px =============== */
+@media screen and (max-width: 1120px) {
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog:nth-child(9) {
+        display: none;
+    }
+
+    .services {
+        display: block;
+    }
+
+    .services .first-four {
+        display: flex;
+        justify-content: center;
+    }
+
+    .services .last-two {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+
+/* ============== max-width 1000px =============== */
+@media screen and (max-width: 1000px) {
     .header-area {
         max-height: 400px;
     }
@@ -270,8 +333,27 @@ footer {
         height: 340px;
         margin: 58px auto 0 2px;
     }
+}
 
-    /* Main max-width 834px */
+
+
+/* ============== max-width 920px =============== */
+@media screen and (max-width: 920px) {
+    .blog-info h4 {
+        font-weight: 600;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+}
+
+
+
+/* ============== max-width 834px =============== */
+@media screen and (max-width: 834px) {
+    .container {
+        max-width: 734px;
+    }
+
     .blog-section {
         display: block;
         margin-top: 70px;
@@ -300,7 +382,6 @@ footer {
         padding: 17px auto;
     }
 
-    /* Blog Area max-width 834px */
     .blog-area {
         max-width: 734px;
         margin: 30px auto 0 auto;
@@ -339,7 +420,6 @@ footer {
         border-radius: 5px;
     }
 
-    /* Footer max-width 834px */
     footer {
         margin-top: 70px;
     }
@@ -353,31 +433,124 @@ footer {
         width: 734px;
         margin: 30px auto;
     }
+}
 
-    .services {
-        display: block;
+
+/* ============== max-width 770px =============== */
+@media screen and (max-width: 770px) {
+    .blog-area {
+        max-width: 100%;
     }
 
-    .services .first-four {
-        display: flex;
-        justify-content: center;
+    .blogs {
+        justify-content: space-between;
     }
 
-    .services .last-two {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
+    .blog-img img {
+        min-width: 200px;
+    }
+
+    .footer-area .border {
+        width: 80%;
     }
 }
 
 
+/* ============== max-width 680px =============== */
+@media screen and (max-width: 680px) {
+    .header-info h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
 
-/* ======================================
-============= Responsive Media ===============
-====================================== */
+    .services .first-four,
+    .services .last-two {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .blog-img img {
+        min-height: 180px;
+    }
+
+    .view-all-btn a {
+        font-size: 15px;
+        padding: 8px 15px;
+    }
+}
+
+/* ============== max-width 615px =============== */
+@media screen and (max-width: 615px) {
+    .header-info {
+        margin-left: 50px;
+    }
+
+    .header-info h1 {
+        font-size: 25px;
+        line-height: 36px;
+    }
+
+    .banner-img img {
+        width: 280px;
+    }
+}
+
+/* ============== max-width 540px =============== */
+@media screen and (max-width: 540px) {
+    .header-area {
+        height: 358px;
+    }
+
+    .header-info {
+        margin-left: 30px;
+    }
+
+    .header-info p {
+        font-size: 10px;
+        margin: 10px auto 22px;
+    }
+
+    .header-info a {
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    header:hover .header-info a {
+        padding: 10px 20px;
+    }
+
+    .banner-img img {
+        width: 200px;
+        height: 300px;
+    }
+
+    .blog-img img {
+        min-height: 160px;
+    }
+}
+
+
+/* ============== max-width 460px =============== */
+@media screen and (max-width: 460px) {
+    .header-info a {
+        padding: 8px;
+        font-size: 10px;
+    }
+
+    header:hover .header-info a {
+        padding: 8px 15px;
+    }
+
+    .blog-img img {
+        min-width: 150px;
+        min-height: 140px;
+    }
+}
+
+
+/* ============== max-width 375px =============== */
 @media screen and (max-width: 375px) {
-
-    /* Header max-width 375px */
     .container {
         max-width: 334px;
     }
@@ -417,8 +590,6 @@ footer {
         margin-top: 20px;
     }
 
-
-    /* Main max-width 375px */
     .blog-section {
         margin-top: 8px;
     }
@@ -454,7 +625,6 @@ footer {
         display: none;
     }
 
-    /* Footer max-width 375px */
     footer {
         margin-top: 24px;
     }
@@ -482,24 +652,10 @@ footer {
     }
 }
 
-
-/* ====== Animation ===== */
-
-.header-info a {
-    transition: padding 2s;
+/* ============== max-width 350px =============== */
+@media screen and (max-width: 350px) {
+    .blog-img img {
+        min-width: 300px;
+        min-height: 140px;
+    }
 }
-
-header:hover .header-info a {
-    padding: 16px 40px;
-}
-
-/* 
-
-.banner-img img {
-    transition: margin-left 2s;
-    margin-left: 50px;
-}
-
-header:hover .banner-img img {
-    margin-left: 150px;
-} */
